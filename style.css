@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-	color: #689499;
+	color: #B1D6E5;
 	font-family: 'Fairplay display';
 	font-size: 24px;
 	font-weight: 400;
@@ -50,15 +50,22 @@ h2 {
 }
 
 button {
-	padding: 10px 8px 10px 8px;
+	padding: 10px 8px;
 	background-color: #F4418F;
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	border-radius: 4px;
+	border: none;
 }
 
 .fortune {
 	font-family: 'Fairplay display';
-	color:#689499;
+	color:#B1D6E5;
 	font-size: 20px;
+}
+
+.disclaimer {
+	font-family: 'Montserrat', sans-serif;
+	color: #DAF1A0;
+	font-size: 14px;
 }
