@@ -21,10 +21,12 @@ align-items: center;
 }
 
 h1 {
-	color: #79C0C8;
+	color: #0E84DA;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 36px;
-	font-weight: 400;
+	font-weight: 600;
+	height: 60px;
+	margin: 60px;
 }
 
 .bottom-margin {
