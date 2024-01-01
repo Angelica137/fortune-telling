@@ -26,8 +26,12 @@ async function pullRandomCard() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const fortuneButton = document.getElementById("fortuneButton");
+  const cardReveal = document.getElementById("cardReveal");
 
-  fortuneButton.addEventListener("click", () => {
-    alert("Button clicked!");
+  fortuneButton.addEventListener("click", async () => {
+    const cardPath = await pullRandomCard();
+    cardReveal.src = cardPath;
+    cardReveal.style.display = "block";
+    //alert("Button clicked!");
   });
 });
