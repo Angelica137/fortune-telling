@@ -3,19 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
-    "
     <link rel="stylesheet" href="style.css" />
     <title>Fortune Telling</title>
   </head>
   <body>
-    <div class="main-content background">
+    <div class="content main-content background">
       <h1 class="bottom-margin">Welcome to Rosita's tarot shop</h1>
       <h2 class="bottom-margin">
         Ask your question and the cards will answer*
@@ -24,17 +22,21 @@
         <img
           id="cardReveal"
           src="cards/1cardBack.png"
-          alt="Deck"
+          alt="Tarot Card"
         /><!--This is initially hidden-->
       </div>
       <div class="bottom-margin-small">
         <button id="fortuneButton">Pull a card</button>
       </div>
       <div id="cardFortune" class="fortune bottom-margin"></div>
-      <footer>
-        <p class="disclaimer">*This is for entertainment purposes only.</p>
-      </footer>
     </div>
+    <footer>
+      <p class="disclaimer">
+        *This is for entertainment purposes only. No answer should be taken
+        seriosuly.
+      </p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
