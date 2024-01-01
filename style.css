@@ -11,7 +11,7 @@ align-items: center;
 }
 
 .bottom-margin {
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 
 .tarot-card {
@@ -20,9 +20,10 @@ align-items: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 188px;
-	height: 270px;
+	width: 350px;
+	height: 600px;
 	margin: auto;
+	margin-bottom: 80px;
 }
 
 .tarot-card img {
