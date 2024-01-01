@@ -8,12 +8,19 @@
   </head>
   <body>
     <div class="main-content background">
-      <h1>Welcome!</h1>
-      <h2>Ask your question and the cards will answer</h2>
+      <h1 class="bottom-margin">Welcome!</h1>
+      <h2 class="bottom-margin">Ask your question and the cards will answer</h2>
       <div class="tarot-card">
-        <img id="cardReveal" src="" /><!--This is just a place holder-->
+        <img
+          id="cardReveal"
+          src=""
+          alt="Tarot Card"
+          style="display: none"
+        /><!--This is initially hidden-->
       </div>
-      <button id="fortuneButton">Read my fortune</button>
+      <div>
+        <button id="fortuneButton">Read my fortune</button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
