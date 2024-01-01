@@ -1,5 +1,5 @@
 body {
-background-color: #2B1F7D;
+background-color: #141322;
 justify-content: center;
 align-items: center;
 }
@@ -10,10 +10,23 @@ align-items: center;
 	margin-right: 186px;
 }
 
+h1 {
+	color: #79C0C8;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+}
+
 .bottom-margin {
 	margin-bottom: 80px;
 }
 
+h2 {
+	color: #689499;
+	font-family: 'Fairplay display';
+	font-size: 24px;
+	font-weight: 400;
+}
 .bottom-margin-small {
 	margin-bottom: 60px;
 }
@@ -36,10 +49,16 @@ align-items: center;
 	display: block;
 }
 
-
 button {
 	padding: 10px 8px 10px 8px;
-	background-color: #F5D083;
+	background-color: #F4418F;
 	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
 	border-radius: 4px;
+}
+
+.fortune {
+	font-family: 'Fairplay display';
+	color:#689499;
+	font-size: 20px;
 }
