@@ -25,25 +25,6 @@ async function pullRandomCard() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  let cardData = [];
-
-  loadCardData().then((cards) => {
-    if (cards) {
-      cardData = cards;
-      console.log("Loaded cards:");
-    } else {
-      console.log("Failed to load the cards");
-    }
-  });
-
-  pullRandomCard()
-    .then((randomCardPath) => {
-      console.log("Random card path:", randomCardPath);
-    })
-    .catch((error) => {
-      console.error("error in pullRandomCard:", error);
-    });
-
   const fortuneButton = document.getElementById("fortuneButton");
 
   fortuneButton.addEventListener("click", () => {
