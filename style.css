@@ -1,5 +1,5 @@
 body {
-background-color: #141322;
+background-color: #171629;
 justify-content: center;
 align-items: center;
 }
@@ -32,7 +32,7 @@ h2 {
 }
 
 .tarot-card {
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	align-items: center;
 	display: flex;
 	justify-content: center;
