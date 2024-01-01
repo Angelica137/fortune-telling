@@ -12,7 +12,6 @@ async function loadCardData() {
 async function getCardImg() {
   const cards = await loadCardData();
   const cardImgs = cards.map((card) => card.img);
-  console.log("Card images array", cardImgs);
   return cardImgs;
 }
 
@@ -22,19 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
   loadCardData().then((cards) => {
     if (cards) {
       cardData = cards;
-      console.log("Loaded cards:", cardData);
+      console.log("Loaded cards:");
     } else {
       console.log("Failed to load the cards");
     }
   });
-
-  getCardImg()
-    .then((cardImgs) => {
-      console.log("returned card images", cardImgs);
-    })
-    .catch((error) => {
-      console.error("Error in getCardImg:", error);
-    });
 
   const fortuneButton = document.getElementById("fortuneButton");
 
