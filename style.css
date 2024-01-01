@@ -58,6 +58,10 @@ button {
 	border: none;
 }
 
+button:hover {
+	background-color: #B82E6A;
+}
+
 .fortune {
 	font-family: 'Fairplay display';
 	color:#B1D6E5;
