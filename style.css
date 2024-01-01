@@ -14,6 +14,10 @@ align-items: center;
 	margin-bottom: 80px;
 }
 
+.bottom-margin-small {
+	margin-bottom: 60px;
+}
+
 .tarot-card {
 	border: 1px solid #000;
 	align-items: center;

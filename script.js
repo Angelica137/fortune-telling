@@ -9,19 +9,20 @@ async function loadCardData() {
   }
 }
 
-//extract the value of "img" for each card an add it to an array
-async function getCardImgs() {
-  const cards = await loadCardData();
-  const cardImgs = cards.map((card) => card.img);
-  return cardImgs;
-}
-
 // pick a card at random from the above array
 // Do I need to do this in one step? Probably it is for the best
 async function pullRandomCard() {
-  const getDeck = await getCardImgs();
+  const getDeck = await loadCardData();
   const randomCard = Math.floor(Math.random() * getDeck.length);
-  return "cards/" + getDeck[randomCard];
+  //return "cards/" + getDeck[randomCard];
+  return getDeck[randomCard];
+}
+
+function displayFortune(card) {
+  const cardFortuneElement = document.getElementById("cardFortune");
+  if (card && card.fortune_telling) {
+    cardFortuneElement.textContent = card.fortune_telling.join(", ");
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -29,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardReveal = document.getElementById("cardReveal");
 
   fortuneButton.addEventListener("click", async () => {
-    const cardPath = await pullRandomCard();
-    cardReveal.src = cardPath;
+    const card = await pullRandomCard();
+    cardReveal.src = "cards/" + card.img;
     cardReveal.style.display = "block";
-    //alert("Button clicked!");
+    displayFortune(card);
   });
 });
