@@ -9,7 +9,7 @@ Clicking one button, the suer draws a random tarot car and receive a fortune tel
 - **Randomised Draws:** Each draw is random
 
 ## Getting started
-To play the game you can visit the [live site](URL lives here) or set it up locally with the instructions below.
+To play the game you can visit the [live site](https://angelica137.github.io/fortune-telling/) or set it up locally with the instructions below.
 
 ### Installation
 ```sh
