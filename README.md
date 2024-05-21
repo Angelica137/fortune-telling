@@ -2,7 +2,7 @@
 
 This is a simple fortune telling game built with HTML, CSS and vanilla JS, nothing less added.
 
-Clicking one button, the suer draws a random tarot car and receive a fortune telling.
+Clicking one button, the user draws a random tarot car and receive a fortune telling.
 
 ## Features
 - **Simple interface:** The game is simple to interact with
